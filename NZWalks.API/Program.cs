@@ -20,6 +20,7 @@ builder.Services.AddDbContext<NZWalksDbContext>(options =>
 // for repository
 builder.Services.AddScoped<IRegionRepository, RegionRepository>();
 builder.Services.AddScoped<IWalkRepository, WalkRepository>();
+builder.Services.AddScoped<IWalkDifficultyRepository, WalkDifficultyRepository>();
 
 
 // for auto mapper
